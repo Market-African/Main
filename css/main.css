@@ -106,13 +106,13 @@ li, a, .btn {
   border-bottom: 3px solid;
 }
 
-.contianer .icon {
+.contianer .icons {
   font-size: 15px;
   margin-right: auto;
   color: rgba(0, 0, 0, 0.56);
 }
 
-.contianer .icon i {
+.contianer .icons i {
   display: inline-block;
   width: 60px;
 }
