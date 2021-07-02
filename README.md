@@ -1,2 +1,2 @@
-# Main
-main website code 
+# FOOTER 
+footer of the website 
