@@ -1,0 +1,317 @@
+/**********************************************************************
+                    home service and product section 
+ ********************************************************************/
+
+ .cards .service-product-icon {
+    display: inline-block;
+    transform: translateY(10rem);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15rem;
+  }
+  
+  /* icon arrow   */
+  
+  #arrow{
+    display: block;
+    font-size: 5rem;
+    margin-top: 2rem;
+    color: #fff;
+  }
+  
+  
+  /* link more  */
+  .cards .card-info #learn-m {
+    font-size: 1.6rem;
+    font-weight: bolder;
+    display: inline-block;
+    border: .2rem solid #fff;
+    padding: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transform: translateY(-2rem);
+  }
+  
+  
+  /*******************************************************
+      about part  
+  ***********************************************/
+
+  .about-img{
+    background: transparent !important;
+    width: 48% !important;
+  }
+  #trade-img {
+       width:100%;
+      height: 63rem;
+      display: inline-block;
+      z-index: 5;
+      object-fit: cover;
+    }
+    
+    .about-text {
+      width: 51% !important;
+      margin-top: 1rem;
+      transform: translateX(-6.5rem);
+      background: transparent !important;
+    
+    }
+    
+    .about-text h2, .about-text a {
+      color: #e84a34 !important;
+    }
+    
+    .about-text p {
+      margin-top: 1rem;
+      letter-spacing: .4rem;
+    }
+    
+    .about-text a {
+      display: inline-block;
+      margin-top: 5rem;
+      font-size: 2.3rem;
+    }  
+    
+  
+    /***********************************************************************
+                      home new and update section 
+   **********************************************************************/
+   .news .component{
+     margin-bottom: 8rem !important;
+   }
+   .box{
+     width: 30rem !important;
+     padding: 0rem !important;
+     background: transparent !important;
+     height: 30rem;
+     margin-top: 2rem;
+   }
+  
+   .box-text{
+    width: 85rem !important;
+    padding: 2rem !important;
+    background: transparent !important;
+    height: 20rem;
+    margin-top: 2rem;
+   }
+
+    .component .item2 img {
+      padding: 0rem 0;
+      display: inline-block;
+      width: 40rem;
+      height: 25rem;
+    }
+    
+    .component .clock-icon {
+      display: inline-block;
+      font-size: 2.3rem;
+      margin-top: 2rem;
+      margin-right: .5rem;
+      color: #e84a34;
+    }
+    
+    .component .date {
+      display: inline-block;
+      vertical-align: middle;
+       transform: translateY(-.7rem) !important;
+      color: #434343;
+      font-size: 1.5rem;
+    }
+   
+    .read-more {
+      color: #fff;
+      font-size: 2.3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translate(-4.5rem ,-15rem);
+    }
+    .read-more a{
+      width: 18rem !important;
+      border: .2rem solid;
+      padding: 1.6rem;
+      text-transform: uppercase;
+      text-decoration: none; 
+    }
+    .rm-1 a{
+      display: block;
+      transform: translateX(10rem) !important;
+    }
+    .component .read-more a:hover {
+      background: white;
+      color: #434343;
+      transition: .8s all ease;
+      border: none;
+    }
+    
+  
+  
+    /********************************************************************************
+    section cantact 
+    *****************************************************************************/
+    
+    .contact {
+      background: #e84a34;
+      padding: 2rem;
+    }
+    .contact h1{
+    margin-top: 6rem;
+    }
+    .contact h3{
+      margin-top: -.5rem !important;
+    }
+    .contact a{
+      margin: 0rem !important;
+    }
+    .contact h1, .contact h3, .contact p, .contact a {
+      color: #fff;
+      text-align: center !important;
+    }
+    
+    .contact h3 {
+      text-align: center;
+    }
+    
+    .contact a {
+      display: inline-block;
+      margin-top: 4rem;
+    }
+  
+
+
+
+    /************************************************************
+    media query  
+    *********************************************************************/
+
+ /************ lage device  ***********************/
+
+    @media  (max-width:1244px) and  (min-width:800px){
+     
+      .box img{
+        width: 100vw !important;
+        object-fit: cover;
+      }
+      .box-text{
+        width: 100vw !important;
+      }
+      .bt-2{
+        margin-bottom: 14rem !important;
+       }
+       .read-more{
+        transform: translate(34rem ,-15rem);
+        }
+        .img-left{
+          transform: none;
+        }
+        .rm-1 a{
+          transform: translateX(0rem) !important;
+        }
+       
+       
+    }
+
+
+    /*************************** medium device size  *****************/
+
+    @media only screen and (max-width: 800px) {
+      h1{
+      font-size:2.8rem !important;
+      }
+      h2,h3{
+       font-size: 2.1rem !important;
+      }
+   
+      p{
+       font-size: 1.4rem  !important;
+      }
+      .container{
+        margin: 0 !important;
+      }
+      .about-img{
+        margin-left: 5rem;
+      }
+      .about-text{
+        margin-left: 10rem !important;
+      }
+      .box img{
+        width: 100vw !important;
+        object-fit: cover;
+      }
+      .box-text{
+        width: 100vw !important;
+      }
+      .bt-2{
+       margin-top: 1rem !important;
+       margin-bottom: 12rem !important;
+      }
+  
+      .read-more{
+        margin-left: 8rem;
+        }
+        .img-left{
+          transform: none;
+          margin-top: 4rem !important
+        }
+        .rm-1{
+          margin-left: -3rem;
+        }
+        .contact{
+          margin-right: 1rem !important;
+          padding: 0 !important;
+          width: 100vw !important;
+        }
+        .contact h1,.contact h3{
+          margin-right: 5rem !important;
+        }
+        .contact {
+          padding-bottom: 2rem !important;
+        }
+    
+    }
+
+
+
+/*************************** small device size  *****************/
+
+
+@media  (max-width:450px){
+  h1{
+    font-size:2.5rem !important;
+    }
+    h2,h3{
+     font-size: 1.9rem !important;
+    }
+ 
+    p{
+     font-size: 1.4rem  !important;
+    }
+    
+  .title1::after {
+    content: "";
+   transform: translateX(-19rem) translateY(4rem);
+  }
+
+  .title2::after {
+    content: "";
+    transform: translateX(-15.5rem) translateY(3rem);
+  }
+  }
+
+  @media  (max-width:545px) {
+    .bt-2{
+      margin-top: 5rem !important;
+      margin-bottom: 14rem !important;
+     }
+ 
+  }
+  @media  (max-width:400px) {
+    .bt-2{
+      margin-top: 14rem !important;
+      margin-bottom: 20rem !important;
+     }
+ 
+  }

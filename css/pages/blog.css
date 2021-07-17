@@ -1,0 +1,225 @@
+
+/* blog aricle  */
+
+.blog-aricles{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+.blog{
+   width: 35rem;
+   height: 40rem;
+   background: transparent;
+   margin: 0 2rem;
+   margin-bottom: 30rem !important;
+
+}
+
+.blog .blog-text{
+    padding: 1rem;
+    height:auto !important;
+    background: transparent;
+    margin-bottom: 50rem !important;
+}
+
+.bg-img{
+    width: 100%;
+    height: 20rem;
+}
+
+.blog h2{
+    color:#1e5483;
+    margin-bottom: .6rem;
+    text-align: left !important;
+}
+
+.blog h2:hover {
+    text-decoration: underline;
+ }
+
+.bg-date{
+    display: inline-block;
+    transform: translateY(-4.3rem);
+    background: #1e5483;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    color: #fff;
+    margin-left: 2rem;
+    width: 12rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+
+    /************************************************************
+    media query  
+    *********************************************************************/
+
+
+ /**************************** large device size  ********************/
+
+@media  (max-width:1170px){
+  .blog{
+      width: 30rem;
+      margin-bottom: 40rem !important;
+  }
+}
+
+
+
+@media  (max-width:1120px){
+  .blog{
+      width: 28rem;
+      margin-bottom: 26rem !important;
+    
+  }
+  .blog-text h2{
+      font-size: 2.4rem ;
+    }
+    .blog-text p{
+        font-size: 1.6rem !important;
+    }
+    .bg-date{
+        font-size: 1.4rem;
+    }
+}
+
+
+
+@media  (max-width:960px){
+  .blog{
+      width: 26rem;
+      margin-bottom: 19rem !important;
+    
+  }
+  .blog-text h2{
+      font-size: 2rem ;
+  }
+  .blog-text p{
+      font-size: 1.4rem !important;
+  }
+    .bg-date{
+        font-size: 1.2rem;
+    }
+    .blog{
+        width: 38rem;
+        margin-bottom: 24rem !important;
+    
+    }
+    .blog-text h2{
+        font-size: 3rem ;
+    }
+    .blog-text p{
+        font-size: 1.8rem !important;
+    }
+    .bg-date{
+    font-size: 1.6rem;
+    }
+}
+
+
+ /**************************** medium  device size  ********************/
+
+@media  (max-width:840px){
+   
+  .blog{
+      width: 33rem;
+      margin-bottom: 24rem !important;
+    
+  }
+  .blog-text h2{
+      font-size: 2.5rem ;
+  }
+  .blog-text p{
+      font-size: 1.7rem !important;
+  }
+.bg-date{
+    font-size: 1.6rem;
+}
+}
+
+
+
+@media  (max-width:740px){
+   
+  .blog{
+      width: 26rem;
+      margin-bottom: 30rem !important;
+    
+  }
+  .blog-text h2{
+      font-size: 2.2rem ;
+  }
+  .blog-text p{
+      font-size: 1.5rem !important;
+  }
+.bg-date{
+    font-size: 1.5rem;
+}
+}
+
+
+@media  (max-width:600px){
+   
+  .blog{
+      width: 24rem;
+      margin-bottom: 26rem !important;
+  }
+  .blog-text h2{
+      font-size: 1.9rem ;
+  }
+  .blog-text p{
+      font-size: 1.5rem !important;
+  }
+.bg-date{
+    font-size: 1.4rem;
+}
+}
+
+
+ /**************************** small  device size  ********************/
+
+ 
+@media  (max-width:560px){
+   
+  .blog{
+      width: 21rem;
+      margin-bottom: 24rem !important;
+    
+  }
+  .blog-text h2{
+      font-size: 1.8rem ;
+  }
+  .blog-text p{
+      font-size: 1.4rem !important;
+  }
+.bg-date{
+    font-size: 1.2rem;
+}
+}
+
+
+@media  (max-width:500px){
+   
+  .blog{
+      width: 42rem;
+      margin-bottom: 24rem !important;
+    
+  }
+  .blog-text h2{
+      font-size: 2.9rem ;
+  }
+
+  .blog-text p{
+      font-size: 1.8rem !important;
+  }
+
+.bg-date{
+    font-size: 1.6rem;
+}
+
+
+}

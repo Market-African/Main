@@ -1,0 +1,21 @@
+.veiw {
+    text-align: center;
+    margin: 0px 0 4rem 0;
+  }
+  
+  .view-all {
+    display: inline-block;
+    text-transform: uppercase;
+    border: .2rem solid;
+    padding: 1.6rem;
+    width: 15rem;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: #e84a34;
+  }
+  
+  .view-all:hover {
+    background: white;
+    color: #434343; 
+  }

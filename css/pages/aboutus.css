@@ -1,0 +1,310 @@
+
+  
+/*********************************
+our mission section  
+******************888*/
+
+.our-mission{
+    background:#014150;
+}
+.mission-info {
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+
+}
+.ourtitle{
+    margin-right: 8rem;
+    background: #fff;
+    width:24rem;
+    height: 4rem;
+    padding: 1rem 0rem 0rem 0rem ;
+
+}
+
+.our-link{
+    text-decoration: none !important;
+}
+.our-link:hover {
+  text-decoration: underline !important;
+}
+
+
+
+  /***********************************************
+   approach section  
+   ************************************************/
+
+
+
+.approach-text{
+    background: transparent !important;
+    padding: 0 !important;
+    margin-top: 5rem !important;
+    width: 50% !important;
+  }
+  .approach-text p{
+      line-height: 1.3 !important;
+      margin-bottom: 3rem !important;
+  }
+  .approach-icon{
+    color: rgba(0, 0, 0, 0.835) !important;
+    font-size: 3.8rem !important;
+    margin: 0 !important;
+  }
+  .approach-link{
+    display: inline-block;
+    color: #0f6e86 !important;
+    font-size: 1.5rem !important;
+    transform: translate(4rem,-2.9rem);
+    text-decoration: none;
+    margin: 0 !important;
+  }
+  .approach-link:hover{
+      text-decoration: underline;
+  }
+
+  .approach-img{
+    background: transparent !important;
+    padding: 0 !important;
+    width: 45% !important;
+    margin-top: 5rem !important;
+  }
+  .approach-img img{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+  /***********************************************
+   value  section  
+   ************************************************/
+
+
+.value {
+    width: 70rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap !important;  
+    margin-bottom: 5rem;
+
+}
+.value-box{
+    width: 34rem;
+    height: 30rem;
+    padding: 5rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+.vb-1{
+    background:#014150 !important;
+}
+.vb-2{
+    background: #333 !important;
+}
+.vb-3{
+    background:#e84a34 !important;
+}
+.vb-4{
+    background: #0d7e99 !important;
+}
+
+
+.value-icon{
+    color: #fff !important;
+    margin-top: 3rem;
+    font-size: 3.5rem !important;
+}
+.value-link{
+    display: inline-block;
+   font-size: 1.6rem;
+   transform: translateY(-1.3rem) !important;
+   text-decoration: none;
+}
+.value-link:hover {
+  text-decoration: underline;
+}
+
+
+
+  /***********************************************
+   team section  
+   ************************************************/
+
+
+.teams{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6rem 20rem;
+
+}
+.team{
+    width: 40rem !important;
+    background: #f1f1f1;
+    height: 80rem;
+    padding: 1.5rem;
+    box-shadow: 10px 10px 15px rgb(158, 158, 158) ,-10px -10px 15px rgb(158, 158, 158) ;
+}
+.team img {
+    object-fit: cover;
+    height: 20rem; 
+    width: 70%;
+    transform: translateX(5.5rem)
+}
+.team h1{
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+    color:#0d7e99;
+    font-size: 3rem;
+}
+.team label{
+  font-size: 1.9rem;
+  color: #434343;
+  display: inline-block;
+}
+.team p{
+    margin-bottom: 1rem;
+}
+.team progress{
+    width: 73%;
+    height: 3rem;
+    transform: translateY(.8rem) translateX(1rem);
+}
+.blog-text h2{
+    text-align: center ;
+    margin-top: 2rem;
+    color: #434343;
+}
+.blog-text .icon{
+    margin-top: 2rem;
+    display: flex ;
+    justify-content: center;
+
+}
+.blog-text .icon i{
+   font-size: 3rem;
+   text-align: center;
+   margin-left: 2rem;
+   color: #434343;
+}
+
+
+
+/**************************************************************
+ media query  
+ ****************************************************************/
+
+ /**************************** large device size  ********************/
+@media  (max-width:1158px) {
+    .ourtitle{
+        height: 3rem !important;
+    }
+
+    .ourtitle h2{
+        font-size: 1.6rem !important;
+    }
+
+    .info-text h2{
+     font-size: 1.7rem !important;
+    }
+    .approaches{
+        padding: 0 2rem !important;
+    }
+  
+    
+}
+
+
+@media  (max-width:1110px){
+    .teams{
+        flex-direction: column;
+    }
+ 
+    .team{
+       margin-bottom: 4rem;
+    }
+ }
+
+
+/**************************** medium  device size  ********************/
+
+
+@media  (max-width:801px) {
+    .approach-text p ,.approach-text h2, .approach-text a .approach-text i{
+        /* padding: 0 10rem !important; */
+        /* margin: 0 1.5rem; */
+        padding: 0 2rem;
+     
+    }
+    .value{
+     
+        width: 24rem;
+        flex-direction: column;
+    }
+    .blog-text p{
+        font-size: 1.8rem !important;
+    }
+    .team{
+        height: 80rem !important;
+    }
+
+}
+@media  (max-width:600px){
+    .ourtitle h2{
+        font-size: 1.2rem !important;
+    }
+    .team{
+        height: 70rem ;
+    }
+ 
+}
+
+
+ /**************************** small  device size  ********************/
+
+
+@media  (max-width:400px){
+
+    .mission-info{
+        flex-direction: column;
+        text-align: center;
+    }
+    .ourtitle{
+        margin-bottom: 2rem;
+        margin-left: 4rem;
+    }
+
+    .info-text h2{
+     font-size: 1.2rem !important;
+     margin-right: 3rem;
+    
+    }
+    .value{
+       margin-right: 20rem;
+    }
+
+   .team{
+     width: 30rem !important;
+     margin-bottom: 4rem;
+     margin-left:5rem !important;
+     margin-right:8rem !important;
+   }
+   .team img{
+       width: 100%;
+       transform: none;
+   }
+   .team h1{
+       font-size: 2.1rem !important;
+   }
+   .blog-text p{
+     font-size: 1.6rem !important;
+   }
+   .team label{
+       font-size: 1.4rem;
+   }
+   .title5::after{
+    transform: translateX(-8.5rem) translateY(3rem);
+   }
+}

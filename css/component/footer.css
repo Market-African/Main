@@ -1,0 +1,332 @@
+
+/**********************************************************************
+                  footer of the website
+ ********************************************************************/
+ footer {
+    color: #f3f3f3;
+  }
+  
+  /* footer li a  */
+  
+  footer li, footer a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.56);
+  }
+  
+  /* p footer  */
+  
+  footer p {
+    font-size: 1.6rem;
+    font-weight: 40rem;
+    line-height: 1.4 !important;
+    color: #fff !important;
+  }
+  
+  /* footer h2  */
+  
+  footer h2 {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+  }
+  
+  
+  /***********************
+   main footer  
+   ********************/
+  
+  .main-footer {
+    width: 100vw;
+    height: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60),rgba(0, 0, 0, 0.60)),url("hero.jpg");
+    background-position: left;
+    background-size: cover;
+  }
+  
+  /* manin footer contect  */
+  
+  .main-footer .main-contect {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  
+  /* logo footer  */
+  
+  .main-footer .logo-footer {
+    cursor: pointer;
+    margin-bottom: 3.5rem;
+    margin-right: 9rem;
+  }
+
+  /* info  */
+  .main-footer .info {
+    width: 32rem;
+  }
+  
+  .main-footer .info .para {
+    margin-top: 3rem;
+  }
+  
+  .main-footer .info .info-link {
+    display: inline-block;
+    margin-top: 3.5rem;
+    background: #e84a34;
+    color: #f3f3f3;
+    text-transform: uppercase;
+    width: 24rem;
+    border: none;
+    margin-bottom: 3rem;
+    padding: 5px 10px;
+    font-size: 1.8rem;
+  }
+  
+  .main-footer .info .info-link:hover {
+    text-decoration: underline;
+  }
+  
+  /*********************************
+      map site  part 
+   **************************/
+  
+  .main-footer .map-site {
+    width: 32rem;
+    margin-top: -12rem;
+  }
+  
+  .main-footer .map-site h2 {
+    margin-bottom: 4rem;
+  }
+  
+  .main-footer .map-site hr {
+    border: none;
+  }
+  
+  .main-footer .map-site hr.new1 {
+    border-top: 1px solid #f3f3f359;
+  }
+  
+  /****************************
+   footer nav  
+   **************************/
+  
+  .main-footer .map-site .nav-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  
+  .main-footer .map-site .nav-footer li {
+    width: 20rem;
+    margin-bottom: 1rem;
+  }
+  
+  .main-footer .map-site .nav-footer li a {
+    color: #f3f3f3;
+    font-size: 1.6rem;
+  }
+  
+  /*********************
+   newslatter   
+   *****************/
+  
+  .main-footer .newsletter {
+    width: 32rem;
+    margin-top: -3.5rem;
+  }
+  
+  .main-footer .newsletter h2 {
+    margin-bottom: 6rem;
+  }
+  
+  .main-footer .newsletter input[type="text"] {
+    height: 5rem;
+    width: 100%;
+    padding: 0 1rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+  }
+  
+  .main-footer .newsletter input[type="Submit"] {
+    width: 100%;
+    margin-top: 3rem;
+    background: #474747;
+    color: #f3f3f3;
+    border: none;
+    height: 4.5rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+  }
+  
+  .main-footer .newsletter input[type="Submit"]:hover {
+    background: #e84a34;
+  }
+  
+  
+  /* **********************
+  copy right part  
+  ***********************/
+  
+  
+  .copy-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+    padding: 4rem 4rem;
+    margin-bottom: -100pxpx;
+    height: 5rem;
+  }
+  
+  .copy-right h4 {
+    color: black;
+    font-size: 1.6rem;
+  }
+  
+  .copy-right a {
+    color: black;
+    font-size: 1.4rem;
+  }
+  
+  .copy-right a:hover {
+    text-decoration: underline;
+    color: blue;
+  }
+  
+  /*********************
+  animation icon  
+  ************************/
+  
+  @-webkit-keyframes moveIcon {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(3rem);
+              transform: translateY(3rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  
+  @keyframes moveIcon {
+    0% {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  
+  /****************************
+   icon footer  
+   ************************/
+  
+  .copy-right .icon-footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .copy-right .icon-footer i {
+    display: block;
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    padding: .4rem;
+    position: relative;
+  }
+  
+  .copy-right .icon-footer i::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    clip-path: circle(40%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    transition: all .4s;
+  }
+  
+  .copy-right .icon-footer i:hover::after {
+    background-color: #44357e;
+  }
+  
+  .copy-right .icon-footer i.animated-icon {
+            animation: moveIcon 1s ease-out .75s;
+            animation-fill-mode: backwards;
+  }
+  
+  .copy-right .icon-footer i.fab {
+    color: #e84a34;
+    padding: 10px;
+  }
+  
+  .copy-right .icon-footer i.fab:hover {
+    color: #fff;
+  }
+  
+  
+  @media only screen and (max-width:1512px) {
+    .main-footer .logo-footer {
+      width: 10rem;
+    }
+    .main-footer .logo-footer img{
+      width: 22rem;
+    }
+    .main-contect{
+      padding: 4rem;
+    }
+    .main-footer .main-contect .info{
+      width: 100%;
+      margin-bottom: 10rem;
+    }
+
+  }
+
+  @media only screen and (max-width:740px) {
+    footer h2{
+      font-size: 1.4rem !important;
+    }
+    footer p,footer a{
+     font-size: 1.2rem !important;
+    }
+   .info .info-link{
+     width: 16rem !important;
+   }
+   .main-contect {
+     flex-direction: column;
+     justify-content: flex-end;
+
+   }
+   .map-site{
+     margin-top: -2rem !important;
+     width: 80vw !important;
+
+   }
+   .newsletter {
+    width: 80vw !important;
+    margin-top: 1rem !important;
+   }
+   .main-footer .map-site .nav-footer li {
+     width: 5rem;
+   }
+   .main-contect .info{
+    width: 100%;
+    margin-bottom: 0rem;
+  }
+
+
+  }
+  
+@media only screen and (max-width:770px) {
+  .copy-right{
+    flex-direction: column;
+  }
+}

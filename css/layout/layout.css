@@ -1,0 +1,155 @@
+/**********************************************************************
+                    layout website
+ ********************************************************************/
+ 
+ .container {
+  margin: 0 auto;
+  max-width: 130.9rem;
+}
+
+
+ .component {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    max-width: 130.9rem;
+    margin-top: 3rem;
+    margin: 0 auto !important;
+  }
+  .component h2, .component p {
+    color: #434343;
+  }
+  .component p {
+    font-size: 2rem;
+    line-height: 1.7;
+  }
+  
+  .component .item1 {
+    background: #e84a34;
+    padding: 5rem;
+    margin-right: 4px;
+    width: 49.5%;
+  }
+  
+  .component .item2 {
+    background: #333;
+    padding: 5rem;
+    width: 49.5%;
+  }
+  
+  .component i {
+    display: block;
+    font-size: 5rem;
+    margin-top: 2rem;
+    color: #fff;
+  }
+  
+  .cards {
+    margin-top: .8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    height: auto !important;
+  }
+  
+  .cards .card1,
+  .cards .card2,
+  .cards .card3 {
+    display: block;
+    width: 33%;
+    height:50rem;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .cards .card1 {
+    background: #014150;
+  }
+  
+  .cards .card2 {
+    background: #0d7e99;
+  }
+  
+  .cards .card3 {
+    background: #999;
+  }
+   
+  .cards .card-info {
+    transform: translateY(17rem);
+    text-align: center;
+  
+  }
+
+
+/*******************************************************
+top img background on about page and contant page  
+************************************************************/
+
+  .background-img{
+    background-image: linear-gradient(rgba(216, 211, 211, 0.466),rgba(226, 217, 217, 0.575)),url("blog7.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw ;
+    height: 20rem ;
+}
+
+.background-img h1{
+   transform: translateY(7rem);
+   font-size: 5rem;
+   margin: 0rem !important;
+}
+.background-img h1::after {
+    content: "";
+    border-bottom: .3rem solid #e84a34;
+    width: 12rem;
+    display: inline-block;
+    position: absolute;
+    top: 4rem;
+    text-align: center;
+   transform: translateX(-40.7rem) translateY(3rem);
+  }
+
+/**********************************************************
+  media query  
+ **********************************************************/
+  @media only screen and (max-width: 800px){
+    .container {
+      width: 100vw !important;
+    }
+    .component{
+      flex-direction: column;
+    }
+    .component .item1{
+      width: 100vw !important;
+    }
+    .component .item2{
+      width: 100vw !important;
+      margin-top: .8rem;
+    }
+    .cards{
+      flex-direction: column;
+    }
+    .cards .card1,
+    .cards .card2,
+    .cards .card3{
+      width: 100vw !important;
+      margin-top: .8rem;
+    }
+    .cards .card1{
+      margin-top: 0 !important;
+    }
+    .background-img{
+      height: 15rem;
+    }
+    .background-img h1{
+      transform: translateY(3rem);
+       margin-left: 2rem !important;
+      font-size: 4rem !important;
+   }
+   .background-img h1::after {
+      transform: translateX(-23.7rem) translateY(3rem) !important;
+     }
+  }

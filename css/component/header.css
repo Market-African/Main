@@ -1,0 +1,255 @@
+/**********************************************************************
+                     header of the website  
+ ********************************************************************/
+
+
+ header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+  }
+  
+  /* header item all  */
+  
+  header li, header a, header .btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.56);
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* header logo  */
+  
+  header .logo {
+    width: 25%;
+    cursor: pointer;
+ 
+  }
+  
+  /* header img logo  */
+  header img{
+      width: 13rem;
+      margin-left: 2rem;
+      transform: translateY(-1rem);
+  }
+  
+  /* header nav   */
+  
+  header .nav {
+    margin-right: auto;
+    width: 40%;
+    transform: translateY(.2rem);
+  }
+  
+  /* nav ul  */
+  header .nav ul {
+    display: flex;
+  }
+  
+  /* nav li  */
+  
+  header .nav ul li {
+    list-style-type: none;
+    margin-left:4.5rem ;  
+  }
+  
+  /* nav a  */
+  header .nav ul li a {
+    font-size: 2.2rem;
+   
+  }
+  
+  /* actice nav  */
+  
+  header .nav ul li a.active-nav {
+    border-bottom: .1rem solid;
+  }
+  
+  /* icon of the header  */
+  
+  header .icon {
+   display: flex;
+   width: 25%;
+  }
+  
+  /* icon i  */
+  
+  header .icon i {
+    display: block;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    padding: .4rem;
+    color: rgba(0, 0, 0, 0.56);
+    transform: translateY(.1rem);
+  
+  }
+  
+  
+   /* header button */
+  header .btn{
+    border: none;
+    background: transparent;
+  }
+
+  header .btn a{
+    display: inline-block !important;
+    background: #025467 !important;
+    color: #f3f3f3;
+    font-size: 1.7rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: .3rem;
+    transform: translateY(-.4rem);
+  }
+  
+ header .btn a:hover {
+    background: #1e5483;
+  } 
+  
+.menu-burger{
+ display: none;
+}
+.menu-logo{
+  display: none;
+}
+
+
+@media only screen and (max-width: 960px) {
+
+   .btn-burger{
+     cursor: pointer;
+     width: 6rem;
+     height: 4rem;
+     padding: 1rem;
+     margin: 0 5rem;
+     position: relative;
+     z-index: 3;
+   }
+  .menu-burger{
+    display: block;
+    width: 4rem;
+    height: .4rem;
+    background: #eb4a34;
+    border-radius: .2rem;
+    position:absolute;
+    top:1.6rem;
+  }
+  .menu-burger::after,
+  .menu-burger::before{
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: .4rem;
+    background: #e84a34;
+    border-radius: .2rem;
+    transition: all .5s ease-in-out;
+    
+  }
+  .menu-burger::after{
+    transform: translateY(-1rem);
+  }
+  .menu-burger::before{
+    transform: translateY(1rem);
+  }
+ 
+  .open .menu-burger {
+    background: transparent;
+  }
+
+  .open .menu-burger::after{
+      transform: rotate(45deg);
+  }
+  .open .menu-burger::before{
+      transform: rotate(-45deg);
+  }
+
+  header{
+    position: relative;
+  }
+  header .logo img{
+    width: 20rem;
+    margin: 4rem;
+  }
+  header .nav {
+   display: none;
+   position: fixed;
+  }
+  header .icon {
+    display: none;
+    position: absolute;
+    left: 2.5rem;
+    top:40rem;
+    z-index: 4;
+  }
+  header .icon i{
+    display: inline-block;
+  }
+ 
+  header .btn{
+    display: none;
+    position: absolute;
+    left: 4rem;
+    top:33rem;
+    z-index: 4;
+  }
+  .fixed-position{
+    position: fixed !important;
+  }
+  header .nav {
+    display: none;
+    position: fixed;
+    top: -.3rem;
+    left: 0;
+    width: 100vw !important;
+    height: 100vh;
+    /* This give the height 100% of the screen or, '100% of View Height' */
+    background-image:linear-gradient(90deg,hsl(0, 0%, 100%)50% ,rgba(0, 0, 0, 0.349) 50%) ;
+    border: 1px solid #004D40;
+    border-left: none;
+    border-bottom: none;
+    z-index: 2;
+    /* This set the layer level of the element, it has precendence over initial level of 1 */
+  }
+  header .nav ul{
+    flex-direction: column;
+    position: absolute;
+    top: 18rem;
+  }
+  header .nav ul li {
+    margin-bottom: 2rem;
+    
+  }
+
+  .menu-logo {
+    display: none;
+    position: fixed;
+    z-index: 3;
+  }
+
+  .open-menu{
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .container {
+    width: 100vw !important;
+    margin: 0 !important;
+  }
+  header .logo img{
+    width: 15rem;
+    margin: 2rem;
+  }
+  .btn-burger{
+    margin: 0 1rem;
+  }
+  header .icon{
+    margin-left: 2rem;
+  }
+  header .icon i{
+    font-size: 2rem;
+    margin-left: 0rem;
+  }
+}
