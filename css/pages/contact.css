@@ -77,7 +77,6 @@ hr{
 }
 .contact-box input:focus ,textarea:focus{
     background: white;
-    outline: 2px red ;
 }
 textarea{
     width: 100%;
@@ -93,6 +92,7 @@ textarea{
     margin-top: 3rem;
     background: #474747;
     color: #f3f3f3;
+    cursor: pointer;
     border: none;
     height: 4.5rem;
     font-size: 1.7rem;
