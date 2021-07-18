@@ -10,6 +10,10 @@ contianer
 }
 .article-info{
     margin-left: 2rem;
+    margin-bottom: 4rem;
+}
+.article-info img{
+    width: 85rem;
 }
 
 /********* sub contect  *******/

@@ -39,7 +39,3 @@
 ## Summary 
 -website is live in netlify.com 
 -use this link to viewed  -- https://quirky-easley-6b9763.netlify.app
-
-and last 
-
-PVM DOCUMENT link  j---  

@@ -15,7 +15,7 @@ btnBurger.addEventListener("click", () => {
 
   if (!menuOpen) {
     btnBurger.classList.add("open")
-    btnBurger.classList.add("dark")
+    // btnBurger.classList.add("dark")
     nav.classList.add("open-menu")
     headerIcon.classList.add("open-menu")
     headerbtn.classList.add("open-menu")
