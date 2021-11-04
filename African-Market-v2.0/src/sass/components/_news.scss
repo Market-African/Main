@@ -1,0 +1,57 @@
+.news {
+    position: relative;
+    &__img {
+        width: 100%;
+        
+       @include shadowBorder;
+    }
+
+    &__text {
+        color: $color-eight;
+
+        &__icon {
+            display: inline-block;
+            font-size: 2.3rem;
+            margin-top: 1.5rem;
+            margin-right: .5rem;
+            color: #e84a34;
+        }
+        
+        &__para {
+            line-height: 1.5;
+        }
+        &__data {
+            display: inline-block;
+            vertical-align: middle;
+             transform: translateY(-.8rem);
+            font-size: 1.5rem;
+        }
+    }
+
+    &__link {
+        @include absCenter;
+    }
+}
+
+
+// contact 
+.contact-section{
+    background: $primary-color;
+}
+
+.contac {
+    max-width: $grid-width;
+    margin: 0 auto;
+    padding: 1rem 0;
+    &__title{
+        text-align: center;
+        color: $color-six;
+        margin: 2rem 0 1rem 0;
+    }
+
+    &__sub {
+        margin-bottom: 5rem;
+        color: $color-six;
+        line-height: 1.7;
+    }
+}

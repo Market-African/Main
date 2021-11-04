@@ -1,0 +1,69 @@
+.btn {
+
+  &:link,
+  &:visited{
+  display: inline-block;
+  font-size: $font-default;
+  text-transform:capitalize;
+  text-decoration: none;
+  padding: 1.3rem 3rem;
+  }
+
+  &--link {
+    color: $color-six;
+    border: .2rem solid ;
+    border-radius: 10rem;
+    transform: translateY(-2rem);
+
+    &-read {
+      transition: all .6s;
+      &:hover{
+        background: $color-six;
+        color: $primary-color;
+        border: none;
+      }
+    }
+  }
+
+  &--veiw {
+    display: block;
+    margin: 1rem auto;
+    text-align: center;
+
+    &--link {
+      display: block;
+      padding: 1.2rem 3rem ;
+      width: 10rem;
+      transition: all .4s;
+
+      &-1 {
+        background-color: $primary-color;
+        color: $color-six;
+
+        &:hover {
+          background: $color-six;
+          color: $primary-color;
+ 
+        }
+      }
+
+      &-2 {
+        background: $color-six;
+        color: $primary-color;
+
+        &:hover {
+          background-color: $primary-color;
+          color: $color-six;  
+        }
+      }
+    
+    }
+
+    
+    }
+
+  }
+
+
+
+

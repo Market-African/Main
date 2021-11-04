@@ -1,0 +1,166 @@
+
+
+/*********************** 
+contianer 
+******************* */
+
+.main-contect-article{
+    display: flex;
+    justify-content: space-between;
+}
+.article-info{
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+
+     img{
+        width: 85rem;
+    }
+    
+}
+
+/********* sub contect  *******/
+
+.sub-contect {
+    margin-top: 10rem;
+    margin-left: 5rem;
+    margin-right: 50rem;
+
+     i{
+        background: #e84a34;
+         color: #f3f3f3;
+         font-size: 3rem;
+         height: 5rem;
+         width: 5rem;
+         transform: translateY(1rem);
+         text-align: center;
+         padding-top: 1rem;
+      }
+}
+
+input[type="search"] {
+    display: inline-block;
+    margin-top: 3.5rem;
+    background: rgba(128, 128, 128, 0.226);
+    text-transform: capitalize;
+    width: 26rem;
+    border: none;
+    height: 5rem;
+    margin-bottom: 3rem;
+    padding: 5px 20px;
+    font-size: 1.6rem;
+}
+
+
+
+.line{
+    background: #e84a34 !important;
+    height: .3rem !important;
+    border: none;
+}
+
+/* .categorias */
+
+.categorias {
+    margin-bottom: 5rem;
+
+    a,  h2{
+        color: #e84a34 ;
+        text-transform: capitalize;
+        text-decoration: none;
+      }
+    h2{
+          font-size: 3rem;
+          margin-top: 5rem;
+      }
+      
+    a{
+          display: inline-block;
+          margin-bottom: 1rem;
+      }
+    a:hover{
+          text-decoration: underline;
+       }
+}
+
+
+
+/* contect us  */
+
+.contact-us{
+    background: #014150;
+    padding: 3.5rem;
+    width: 35rem;
+    height: 30rem;
+
+     button{
+        margin-top: 2rem;
+        font-size: 2rem;
+        height: 5rem;
+        width: 100%;
+        text-align: center;
+        text-transform: capitalize;
+        border: none;
+    }
+     button:hover {
+      background: #e84a34;
+      color: #fff;
+    }
+}
+
+
+
+
+/************************************************************
+    media query  
+*********************************************************************/
+
+ /************ lage device  ***********************/
+
+@media (max-width:1326px){
+  
+  .main-contect-article{
+      flex-direction: column;
+  }
+  .article-info img{
+      margin-top: 2rem;
+      width: 100%;
+  }
+  .sub-contect{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+  }
+  .categorias{
+      margin-right: 2rem;
+  }
+  .contact-us {
+      transform: translateY(3.4rem);
+      margin-left: 2rem;
+      margin-right: 5rem;
+     
+  }
+
+}
+
+
+
+ /************ small device  ***********************/
+
+
+@media (max-width:754px){
+    .article-info h1{
+      font-size: 3rem;
+    }
+
+    .sub-contect{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    .categorias{
+       width: 100%;
+    }
+    .contact-us {
+        width: 100%;
+        margin-left: -3rem;
+    }
+}

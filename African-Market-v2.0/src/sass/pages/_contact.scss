@@ -1,0 +1,183 @@
+
+/************* contact info  **********/
+
+.contact-info{
+    margin-right:4rem !important ;
+
+     h2{
+        color: #434343 !important;
+    }
+     i, a, span{
+        color: #434343 !important;
+    
+    }
+     i{
+        display: block;
+        font-size: 3rem;
+    }
+     span, a{
+        font-size: 1.8rem !important;   
+        text-decoration: none; 
+    }
+     span{
+        display: inline-block;
+        transform: translateY(-2.7rem) translateX(4rem);
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+hr{
+    margin: 4rem 0;
+}
+ 
+
+
+
+/********************* form1 and form2 *****************/
+
+
+.form1{
+    margin-right:5rem !important ;
+}
+   
+   /* icon i  */
+   
+.icon-contact {
+    display: flex !important;
+    transform: translateX(-2rem);
+
+     i {
+        display: block;
+        font-size: 2.5rem;
+        clip-path: circle(40%);
+        background: black;
+        padding: 1.8rem;
+        color: #fff !important;
+        transform: translatey(.2rem) translateX(1.3rem);
+        opacity:.3;
+   }
+   
+     
+     i:hover {
+       opacity: .8;
+     }
+   }
+   
+ 
+
+.contact-box input{
+   width: 100%;
+   margin-bottom: 2rem;
+   height: 5rem;
+   background: rgba(128, 128, 128, 0.226);
+   border: none;
+   padding-left: 2rem;
+   font-size: 1.8rem;
+   text-transform: capitalize;
+
+     input::placeholder{
+    color: black !important;
+    }
+
+     input:focus ,textarea:focus{
+    background: white;
+    }
+}
+
+textarea{
+    width: 100%;
+    background: rgba(128, 128, 128, 0.226); 
+    font-size: 1.8rem;  
+    padding-left: 2rem;
+    text-transform: capitalize;
+    border: none;
+}
+
+.form2 {
+
+    input[type="Submit"] {
+        width: 20rem ;
+        margin-top: 3rem;
+        background: #474747;
+        color: #f3f3f3;
+        cursor: pointer;
+        border: none;
+        height: 4.5rem;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        height: 6rem ;
+      }
+      
+     input[type="Submit"]:hover {
+        background: #e84a34;
+    
+    }
+     i{
+        display: inline-block;
+       transform: translateX(-5rem) translateY(1.7rem);
+       font-size: 4.5rem !important;
+    }
+}
+
+/***************************** map sectioon  ****************/
+
+.map iframe{
+    width: 100%;
+}
+
+.title4::after {
+    content: "";
+    border-bottom: .3rem solid #e84a34;
+    width: 5rem;
+    display: inline-block;
+    position: absolute;
+    top: 3rem;
+    text-align: center;
+   transform: translateX(-29rem) translateY(3rem) !important;
+  }
+
+  
+/*************************************************************************
+ media query  
+ ****************************************************************************/
+
+
+ /*************************medium device size  **********************/
+
+  @media  (max-width:800px){
+
+   .contact-info{
+    width: 90%;
+    margin-left: 18rem;
+    margin-right: 18rem !important;
+   }
+   .contact-info span{
+       margin-right: 2rem;
+   }
+   .contact-info p{
+       font-size: 1.6rem !important;
+   }
+   .form2{
+       margin-top: -14rem !important;
+   }
+   .form2 input , .form2 textarea{
+       width: 90%;
+       margin-left: 3rem;
+   }
+   .form1 input {
+       width: 90%;
+       margin-left: 5.6rem;
+   }
+  
+ }
+
+
+
+ /* icons links
+
+ tiweter  https://twitter.com/sautiorg
+ facebook https://www.facebook.com/sautiorg/
+ link  https://www.linkedin.com/company/sauti-africa/ */
+ 

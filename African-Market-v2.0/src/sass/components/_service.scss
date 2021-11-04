@@ -1,0 +1,23 @@
+// urar home page-ka 
+.service {
+        position: relative;
+        height: 20rem;
+        padding:2rem;
+        color: $color-six;
+        @include shadowBorder;
+
+        &--1{
+            background-color: $primary-color;
+        }
+
+        &--2{
+            background-color: $secondary-color;
+        }
+
+        &__arrow {
+            position: absolute;
+            bottom: 4rem;
+            font-size: 3rem ;
+           
+        }
+    }

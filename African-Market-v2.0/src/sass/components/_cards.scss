@@ -1,0 +1,35 @@
+.card {
+    height: 40rem;
+    padding: 0 1rem;
+    color: $color-six;
+    position: relative;
+    
+    
+    @include shadowBorder;
+    @include card;
+
+    &__icon {
+        position: absolute;
+        top: 10%;
+        left: 30%;
+    }
+
+    &__info {
+        width: 90%;
+        position: absolute;
+        bottom: 2rem;
+        text-align: center;
+    }
+    
+    &--1 {
+        background-color:$secondary-color-dark;
+    }
+
+    &--2 {
+        background-color:$secondary-color;
+    }
+
+    &--3 {
+        background-color:$color-six-dark;
+    }
+}
