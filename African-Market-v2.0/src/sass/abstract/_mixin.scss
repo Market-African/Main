@@ -6,15 +6,20 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
 @mixin shadowBorder {
     border-radius: 5px;
-    box-shadow: 0 5px 1rem rgba($color-seven, .3);
+    box-shadow: 0 5px 1rem rgba($color-black, .3);
     transition: all .3s;
     
     &:hover{
-        box-shadow: 0 1rem 1rem rgba($color-seven, .4);
+        box-shadow: 0 1rem 1rem rgba($color-black, .4);
         transform: scale(1.01);
     }
+}
+
+@mixin mainShadow{
+    box-shadow: 0 1rem 1rem rgba($color-black, .4);
 }
 
 @mixin  card {

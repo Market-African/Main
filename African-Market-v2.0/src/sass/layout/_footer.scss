@@ -1,16 +1,13 @@
 
-/**********************************************************************
-                  footer of the website
- ********************************************************************/
  footer {
     color: #f3f3f3;
-      /* footer li a  */
+
     li,a {
         text-transform: uppercase;
         text-decoration: none;
         color: rgba(0, 0, 0, 0.56);
       }
-        /* p footer  */
+
       p {
         font-size: 1.6rem;
         font-weight: 40rem;
@@ -30,7 +27,7 @@
    main footer  
    ********************/
   
-  .main-footer {
+  .main__footer {
     width: 100vw;
     height: auto;
     background-image: linear-gradient(
@@ -39,131 +36,128 @@
       url("../images/hero.jpg");
     background-position: left;
     background-size: cover;
+    padding: 4rem 0;
+  }
 
-      /* manin footer contect  */
-    .main-contect {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 2.5rem;
-        position: relative;
-        flex-wrap: wrap;
-      }
+/* logo footer  */
 
-        /* logo footer  */
-      .logo-footer {
-        cursor: pointer;
-        margin-bottom: 3.5rem;
-        margin-right: 9rem;
-      }
+.logo-footer {
+  cursor: pointer;
+  margin-bottom: 3rem;
+  margin-right: 9rem;
+}
       
     /* info  */
-      .info {
-        width: 32rem;
+.info {
+  width: 100%;
 
-         .para {
-            margin-top: 3rem;
-             }
-        
-         .info-link {
-            display: inline-block;
-            margin-top: 3.5rem;
-            background: #e84a34;
-            color: #f3f3f3;
-            text-transform: uppercase;
-            width: 21rem;
-            border: none;
-            margin-bottom: 3rem;
-            padding: 5px 10px;
-            font-size: 1.8rem;
-        }
-        
-         .info-link:hover {
-            text-decoration: underline;
-        }
-      }
+    &__para {
+      margin-top: 3rem;
+    }
+  
+    &__link {
+      display: inline-block;
+      font-size: 1.8rem;
+      text-transform:capitalize;
+      background: $color-primary;
+      color: rgba($color-white,.9);
+      margin-top: 3rem;
+      border: none;
+      border-radius: 10rem;
+      margin-bottom: 3rem;
+      padding: 8px 2rem;
+    
+  }
+  
+    .info-link:hover {
+      text-decoration: underline;
+  }
+}
   
         /*********************************
             map site  part 
         **************************/
         
-        .map-site {
-            width: 32rem;
-            margin-top: -12rem;
+.mapsite {
+    width: 100%;
+    margin-top: 10rem;
+    h2 {
+        margin-bottom: 4rem;
+    }
+    
+    hr {
+        border: none;
+    }
+    
+    hr.new1 {
+        border-top: 1px solid #f3f3f359;
+    }
 
-            h2 {
-                margin-bottom: 4rem;
-            }
-            
-            hr {
-                border: none;
-            }
-            
-            hr.new1 {
-                border-top: 1px solid #f3f3f359;
-            }
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 3rem;
 
-        /****************************
-        footer nav  
-        **************************/
+            li {
+                width: 20rem;
+                margin-bottom: 1rem;
+            }
         
-            .nav-footer {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-top: 3rem;
+            li a {
+                color: #f3f3f3;
+                font-size: 1.6rem;
+                text-transform:capitalize;
+            }
+      }          
+}
 
-                    li {
-                        width: 20rem;
-                        margin-bottom: 1rem;
-                    }
-                
-                    li a {
-                        color: #f3f3f3;
-                        font-size: 1.6rem;
-                    }
-             }          
-        }
 
-          /*********************
-          newslatter   
-        *****************/
+.newsletter {
+  width: 100%;
+  margin-top: 10rem;
 
-        .newsletter {
-            width: 32rem;
-            margin-top: -3.5rem;
+  h2 {
+      margin-bottom: 6rem;
+  }
+  
+  input[type="text"] {
+      height: 4.5rem;
+      text-align: center;
+      width: 80%;
+      padding: 0 2rem;
+      font-size: $default-font;
+      text-transform:capitalize;
+      border: none;
+      border-radius: 10rem;
+    
 
-                h2 {
-                    margin-bottom: 6rem;
-                }
-                
-                input[type="text"] {
-                    height: 5rem;
-                    width: 100%;
-                    padding: 0 1rem;
-                    font-size: 1.6rem;
-                    text-transform: uppercase;
-                }
-                
-                input[type="Submit"] {
-                    width: 100%;
-                    margin-top: 3rem;
-                    background: #474747;
-                    color: #f3f3f3;
-                    border: none;
-                    height: 4.5rem;
-                    font-size: 1.7rem;
-                    text-transform: uppercase;
-                }
-                
-                input[type="Submit"]:hover {
-                    background: #e84a34;
-                }
-          }
-        
-       
+      &:focus{
+        outline: none;
+      }
+  }
+  
+  input[type="Submit"] {
+      width: 90%;
+      height: 4.5rem;
+      font-size: $default-font;
+      text-transform:capitalize;
+      background: #474747;
+      color: #f3f3f3;
+      margin-top: 3rem;
+      border: none;
+      border-radius: 10rem;
+      transition: all .4s;
+ 
      
   }
+  
+  input[type="Submit"]:hover {
+      background: #e84a34;
+  }
+}
+        
+
   
   
   /* **********************
@@ -174,10 +168,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 5rem;
-    padding: 4rem 4rem;
-    margin-bottom: -100pxpx;
-    height: 5rem;
+    margin-top: -10rem;
+    padding: 2.5rem 4rem 1.5rem 4rem;
+    height: 1rem;
 
         h4 {
             color: black;

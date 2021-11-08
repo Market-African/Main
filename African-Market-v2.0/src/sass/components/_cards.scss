@@ -1,7 +1,7 @@
 .card {
     height: 40rem;
     padding: 0 1rem;
-    color: $color-six;
+    color: $color-white;
     position: relative;
     
     
@@ -30,6 +30,6 @@
     }
 
     &--3 {
-        background-color:$color-six-dark;
+        background-color:$color-white-dark;
     }
 }

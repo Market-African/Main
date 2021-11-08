@@ -1,13 +1,14 @@
 // urar home page-ka 
 .service {
         position: relative;
-        height: 20rem;
-        padding:2rem;
-        color: $color-six;
+        height: 18rem;
+        padding:3rem 3rem 2rem 3rem;
+        color: $color-white;
+
         @include shadowBorder;
 
         &--1{
-            background-color: $primary-color;
+            background-color: $color-primary;
         }
 
         &--2{

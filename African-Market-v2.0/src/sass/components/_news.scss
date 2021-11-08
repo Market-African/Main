@@ -2,12 +2,12 @@
     position: relative;
     &__img {
         width: 100%;
-        
+
        @include shadowBorder;
     }
 
     &__text {
-        color: $color-eight;
+        color: $color-black-light-1;
 
         &__icon {
             display: inline-block;
@@ -36,22 +36,25 @@
 
 // contact 
 .contact-section{
-    background: $primary-color;
+    background: $color-primary;
+    width: 100vw;
 }
 
 .contac {
     max-width: $grid-width;
     margin: 0 auto;
-    padding: 1rem 0;
+    padding: 4rem 0 1rem 0;
+
     &__title{
         text-align: center;
-        color: $color-six;
+        color: $color-white;
         margin: 2rem 0 1rem 0;
     }
 
     &__sub {
         margin-bottom: 5rem;
-        color: $color-six;
+        color: $color-white;
         line-height: 1.7;
     }
 }
+
