@@ -1,7 +1,14 @@
-
+.service-section{
+    margin-top: -15rem;
+    background: rgba($color-gray,.05);
+    border-radius: 100% 0% 100% 0% / 0% 79% 21% 100%;
+    padding: 15rem 0;
+    z-index: -1;
+    
+}
 // waxaad u qaadaa home pagka
 .about {
-
+   
     &__img {
         width: 100%;
         

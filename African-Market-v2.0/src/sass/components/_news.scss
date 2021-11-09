@@ -2,7 +2,7 @@
     position: relative;
     &__img {
         width: 100%;
-
+     
        @include shadowBorder;
     }
 
@@ -37,13 +37,17 @@
 // contact 
 .contact-section{
     background: $color-primary;
-    width: 100vw;
+    width: 100%;
+    padding-top: 4rem;
+    border-top-right-radius:30rem;
+  
 }
 
 .contac {
     max-width: $grid-width;
     margin: 0 auto;
-    padding: 4rem 0 1rem 0;
+    padding: 4rem 0 .1rem 0;
+
 
     &__title{
         text-align: center;

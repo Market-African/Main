@@ -1,4 +1,28 @@
 
+const data = [
+  {
+      title:'sauti east africa',
+      img:'../../images/slide1.jpg',
+      btn: 'welcome',
+      link : '#'
+  },
+  {
+    title:' empowers women ',
+    img:'../../images/slide2.jpg',
+    btn: 'what we do',
+    link : `../../structure/mainPage/about.html`
+  },
+  {
+    title:'gap in trade',
+    img:'../../images/slide3.jpg',
+    btn: 'blog and news',
+    link : '../../structure/mainPage/blog.html'
+  }
+]
+
+
+
+
 // header menu toggle 
 
 // const btnBurger =document.querySelector(".btn-burger")
@@ -32,6 +56,7 @@
 //     menuOpen = false;
 //   }
 // })
+
 
 
 
@@ -78,40 +103,17 @@ function maker(img,btn,heading,link){
 }
 
 
-const data = [
-    {
-        title:'sauti east africa',
-        img:'../../images/slide1.jpg',
-        btn: 'welcome',
-        link : '#'
-    },
-    {
-      title:' empowers women ',
-      img:'../../images/slide2.jpg',
-      btn: 'what we do',
-      link : `../../structure/mainPage/about.html`
-    },
-    {
-      title:'gap in trade',
-      img:'../../images/slide3.jpg',
-      btn: 'blog and news',
-      link : '../../structure/mainPage/blog.html'
-    }
-]
-
 // paranet selection 
-const slideContainer =document.querySelector(".slide-container");
+const slideContainer = document.querySelector(".slide-container");
 
 // looping for data
-for (let i= 0; i < data.length; i++) {
-const element = data[i];
-slideContainer.appendChild(maker(element.img,element.btn,element.title,element.link))
-}
+data.map( item => {
+  slideContainer.appendChild(maker(item.img, item.btn, item.title, item.link))
+})
 
 console.log(maker());
 
 //animated slid 
-
 let index =0;
 
 show();
@@ -133,3 +135,18 @@ slide[index -1].style.display= "block"
 
 setTimeout(show, 3000);
 }
+
+{/* <div class="component">
+        <div class="item2 approach-img" >
+        <img src="../../images/about2.jpg">
+        </div>
+
+        <div class="item1 approach-text">
+          <h2 class="blue"> </h2>
+          <p class="bold"></p>
+          <p></p>
+          <hr>
+          <i class="material-icons approach-icon">east</i>   
+          <a href="#" class="approach-link"></a>
+        </div>
+</div> */}

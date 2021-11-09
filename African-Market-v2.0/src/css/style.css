@@ -92,13 +92,17 @@ body {
     transform: translate(0); } }
 
 body {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Lato', sans-serif; }
 
 /* h1 style  */
-h1 {
-  font-size: 3.5rem;
-  color: #434343;
-  position: relative; }
+.primary__headding {
+  font-size: 5rem;
+  position: relative;
+  color: #e84a34;
+  transition: all .3s; }
+  .primary__headding:hover {
+    transform: rotate(3deg);
+    text-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4); }
 
 .center {
   text-align: center; }
@@ -347,7 +351,7 @@ p {
   padding: 3rem 3rem 2rem 3rem;
   color: #fff;
   border-radius: 5px;
-  box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.3);
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
   transition: all .3s; }
   .service:hover {
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
@@ -367,7 +371,7 @@ p {
   color: #fff;
   position: relative;
   border-radius: 5px;
-  box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.3);
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
   transition: all .3s; }
   .card:hover {
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
@@ -390,11 +394,18 @@ p {
   .card--3 {
     background-color: #999; }
 
+.service-section {
+  margin-top: -15rem;
+  background: rgba(119, 119, 119, 0.05);
+  border-radius: 100% 0% 100% 0% / 0% 79% 21% 100%;
+  padding: 15rem 0;
+  z-index: -1; }
+
 .about__img {
   width: 100%; }
   .about__img img {
     border-radius: 5px;
-    box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.3);
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
     transition: all .3s; }
     .about__img img:hover {
       box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
@@ -419,7 +430,7 @@ p {
   .news__img {
     width: 100%;
     border-radius: 5px;
-    box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.3);
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
     transition: all .3s; }
     .news__img:hover {
       box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
@@ -447,12 +458,14 @@ p {
 
 .contact-section {
   background: #e84a34;
-  width: 100vw; }
+  width: 100%;
+  padding-top: 4rem;
+  border-top-right-radius: 30rem; }
 
 .contac {
   max-width: 114rem;
   margin: 0 auto;
-  padding: 4rem 0 1rem 0; }
+  padding: 4rem 0 .1rem 0; }
   .contac__title {
     text-align: center;
     color: #fff;
@@ -482,7 +495,7 @@ footer {
    main footer  
    ********************/
 .main__footer {
-  width: 100vw;
+  width: 100%;
   height: auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/hero.jpg");
   background-position: left;
