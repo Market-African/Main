@@ -1,0 +1,27 @@
+{
+  "name": "main",
+  "version": "2.0.0",
+  "description": "v2 of the web app ",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Market-African/Main.git"
+  },
+  "author": "Cayto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Market-African/Main/issues"
+  },
+  "homepage": "https://github.com/Market-African/Main#readme",
+  "devDependencies": {
+    "parcel": "^2.7.0",
+    "sass": "^1.54.5"
+  },
+  "dependencies": {
+    "core-js": "^3.24.1",
+    "regenerator-runtime": "^0.13.9"
+  }
+}
